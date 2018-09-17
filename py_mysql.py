@@ -9,7 +9,7 @@ from PyQt5.QtCore import *
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        self.conn = pymysql.connect(host='localhost', port=3306, user='root', password='hxm971207', db='java')
+        self.conn = pymysql.connect(host='localhost', port=3306, user='root', password='', db='')
         self.cur = self.conn.cursor()
         self.sqlString = "select * from student where "
         MainWindow.setObjectName('MainWindow')
